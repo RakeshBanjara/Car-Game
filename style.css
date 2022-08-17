@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+}
+.car,.enemy{
+    width: 65px;
+    height:70px;
+    /* background: red; */
+    position: absolute;
+    bottom: 120px;
+    background-image: url('car.png');
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.gameArea{
+    width: 400px;
+    height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gQbdSRRjbC6uHIaTQN3ETvd5F80PyNymDGfpKksndMlSkldNRK4NQLSeSJbSVvD9jNs&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+.carGame{
+    background-image: url('https://64.media.tumblr.com/78373490547d6328147bb44f791c0d64/9430e87a8916acf0-9e/s400x600/3609a4c6b87b99fde038e04c9cda79a278f58c67.gifv');
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.lines{
+    width: 10px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    margin-left: 195px;
+    position: absolute;
+}
+.score{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 300px;
+    /* height: 70px; */
+    line-height: 70px;
+    background: rgb(1, 255, 35);
+    color: white;
+    text-align: center;
+    font-size:1.5em;
+    font-family: fantasy;
+    box-shadow:0 5px 5px rgb(100, 193, 0) ;
+    
+}
+.startScreen{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width:30%;
+    line-height: 30px;
+    background:rgb(4, 0, 3);
+    color: white;
+    z-index: 1;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    letter-spacing: 5;
+    cursor: pointer;
+    border: 2px solid #210101;
+    box-shadow:0 5px 5px #777 ;
+    margin: auto;
+    padding: 15px;
+    text-transform: uppercase;
+    word-spacing: 3;
+}
