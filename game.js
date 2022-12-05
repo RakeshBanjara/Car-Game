@@ -41,7 +41,10 @@ function moveLines()
       {
           item.y-=760;
       }
+      if(player.score<1000)
       item.y+=player.speed;
+      else if(player.score>=1000 && player.score<3000) item.y+=1.5*player.speed;
+      else item.y+=2*player.speed;
       //console.log('e'+item.y);
       item.style.top=(item.y)+"px";
 
