@@ -81,7 +81,10 @@ function moveEnemy(car)
           item.style.left=Math.floor(Math.random()*350)+"px";
           item.style.backgroundColor=randomColor();
       }
+      if(player.score<1000)
       item.y+=player.speed;
+      else if(player.score>=1000 && player.score<3000) item.y+=1.5*player.speed;
+      else item.y+=2*player.speed;
       //console.log(item.y);
       item.style.top=(item.y)+"px";
      
@@ -154,7 +157,10 @@ function gamePlay()
     {   audio.play();
         moveLines();
         moveEnemy(car);
+        if(player.score<1000)
         score.innerHTML="score: "+(player.score++);
+        else if(player.score>=1000 && player.score<3000)score.innerHTML="score: "+(player.score+=2);
+        else score.innerHTML="score: "+(player.score+=3);
 
         if(keys.ArrowUp &&  player.y >road.top+70 ){ player.y-=player.speed};
         if(keys.ArrowDown &&  player.y <road.bottom-70){ player.y+=player.speed};
