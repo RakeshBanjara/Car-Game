@@ -3,7 +3,7 @@ const startScreen=document.querySelector('.startScreen');
 const gameArea=document.querySelector('.gameArea');
 
 var audio=document.createElement("audio");  //yaha double codes ke andar ham tag ka name likhate hai jo tag ham create karna chahte hai.
-audio.setAttribute('src','drag-racing-2-6842.mp3')     //isake through ham audio tag ke andar attribute set set karte hai.
+audio.setAttribute('src','drag-racing-2-6842.mp4')     //isake through ham audio tag ke andar attribute set set karte hai.
 audio.loop=true;
 var audioClash=document.createElement("audio");  
 audioClash.setAttribute('src','Car_Crash.mp3')     
