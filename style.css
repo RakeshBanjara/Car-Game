@@ -21,8 +21,7 @@
 .gameArea{
     width: 400px;
     height: 100vh;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gQbdSRRjbC6uHIaTQN3ETvd5F80PyNymDGfpKksndMlSkldNRK4NQLSeSJbSVvD9jNs&usqp=CAU');
-    background-repeat: no-repeat;
+    background-color: rgb(4, 123, 12);
     background-size: 100% 100%;
     margin: auto;
     position: relative;
@@ -31,10 +30,7 @@
     border-right: 7px dashed white;
 }
 .carGame{
-    background-image: url('https://64.media.tumblr.com/78373490547d6328147bb44f791c0d64/9430e87a8916acf0-9e/s400x600/3609a4c6b87b99fde038e04c9cda79a278f58c67.gifv');
-   
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url('bg.jpg');
 }
 .lines{
     width: 10px;
